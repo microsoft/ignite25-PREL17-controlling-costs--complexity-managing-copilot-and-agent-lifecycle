@@ -1,0 +1,53 @@
+name: "Add new issues to Ignite GH Project"
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    steps:
+      - name: Add issue to project
+        env:
+          GITHUB_TOKEN: ${{ secrets.ADD_TO_PROJECT }}
+          PROJECT_URL: ${{ secrets.GH_PROJECT_URL }}
+          ISSUE_ID: ${{ github.event.issue.node_id }}
+        run: |
+          gh api graphql -f query='
+            mutation($projectId: ID!, $contentId: ID!) {
+              addProjectV2ItemById(input: {projectId: $projectId contentId: $contentId}) {
+                item {
+                  id
+                }
+              }
+            }' -f projectId="$PROJECT_URL" -f contentId="$ISSUE_ID"
+
+  label_issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    steps:
+      - name: Label new issue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REPO: ${{ github.repository }}
+          LABEL: ${{ secrets.ISSUE_LABEL }}
+        run: |
+          if [ -n "$LABEL" ]; then
+            gh api \
+              --method POST \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              /repos/$REPO/issues/$ISSUE_NUMBER/labels \
+              -f labels="$LABEL"
+          fi
