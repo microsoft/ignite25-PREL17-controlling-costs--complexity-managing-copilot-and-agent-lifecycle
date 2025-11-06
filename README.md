@@ -6,9 +6,6 @@
 
 ## 🔥PREL17: Controlling Costs & Complexity: Managing Copilot and Agent Lifecycle
 
-[![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
-[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=adff2f&logoColor=fff)](https://aka.ms/foundry/forum)
-
 ### Session Description
 
 Join our workshop for IT administrators and platform owners managing Microsoft Copilot and custom agents built in Copilot Studio Lite and Copilot Studio. Learn to govern lifecycle processes, control costs, reduce agent sprawl, enforce access policies, configure analytics, and align agent provisioning with business priorities. Gain tools and strategies for scaling responsibly across departments while ensuring clarity, compliance, and cost efficiency.
@@ -44,8 +41,8 @@ For more information, setup instructions for other dev clients, and to post comm
 
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| Ignite 2025 Next Steps | [https://aka.ms/Ignite25-Next-Steps](https://aka.ms/Ignite25-Next-Steps?ocid=ignite25_nextsteps_cnl) | Links to all repos for AI Tour 26 Sessions |
-| Azure AI Foundry Community Discord | [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)| Connect with the Azure AI Foundry Community! |
+| Copilot Control System @ Ignite 2025 | [https://aka.ms/CCSIgnite2025](https://aka.ms/CCSIgnite2025) | All the news about CCS @ Ignite 2025 |
+| Copilot Control system @ MSLearn | [Copilot Control System](https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-control-system/overview)| Start your CCS Journey Here! |
 | Learn at Ignite | [https://aka.ms/LearnAtIgnite](https://aka.ms/LearnAtIgnite?ocid=ignite25_nextsteps_github_cnl) | Continue learning on Microsoft Learn |
 
 ## Content Owners
