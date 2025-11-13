@@ -41,6 +41,7 @@ For more information, setup instructions for other dev clients, and to post comm
 
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
+| Ignite 2025 Next Steps | [https://aka.ms/Ignite25-Next-Steps](https://aka.ms/Ignite25-Next-Steps?ocid=ignite25_nextsteps_cnl) | Links to all repos for Ignite 2025 Sessions |
 | Copilot Control System @ Ignite 2025 | [https://aka.ms/CCSIgnite2025](https://aka.ms/CCSIgnite2025) | All the news about CCS @ Ignite 2025 |
 | Copilot Control system @ MSLearn | [Copilot Control System](https://learn.microsoft.com/en-us/copilot/microsoft-365/copilot-control-system/overview)| Start your CCS Journey Here! |
 | Learn at Ignite | [https://aka.ms/LearnAtIgnite](https://aka.ms/LearnAtIgnite?ocid=ignite25_nextsteps_github_cnl) | Continue learning on Microsoft Learn |
